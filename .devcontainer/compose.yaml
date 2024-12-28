@@ -1,0 +1,11 @@
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: .devcontainer/docker/web/Dockerfile
+    tty: true
+    ports:
+      - 3000:3000 # for Next.js
+      - 6006:6006 # for Storybook
+    volumes:
+      - ../:/service/web
