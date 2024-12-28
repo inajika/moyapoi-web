@@ -4,7 +4,7 @@
   "service": "web",
   "workspaceFolder": "/service/web",
   "postCreateCommand": "npm install && (node -v | sed 's/^.\\{1\\}//' > .node-version)",
-  // "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && git config --global core.editor vim",
+  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && git config --global core.editor vim",
   "customizations": {
     "vscode": {
       "settings": {
