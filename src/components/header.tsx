@@ -15,7 +15,7 @@ import { Button } from '@/components/ui/button';
  */
 export default function Header() {
   return (
-    <header className="h-[8vh] p-1 bg-blue-200">
+    <header className="h-[4rem] p-1 bg-blue-200">
       もやもやぽいぽい
       <AlertDialog>
         <AlertDialogTrigger asChild>
