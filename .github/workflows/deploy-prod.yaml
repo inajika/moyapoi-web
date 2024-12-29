@@ -1,17 +1,17 @@
-name: 開発環境へのデプロイ
+name: 本番環境へのデプロイ
 
 on:
   push:
     branches:
-      - develop # `develop`ブランチにプッシュされたとき
+      - master # `master`ブランチにプッシュされたとき
 
 env:
   TZ: Asia/Tokyo
-  NODE_ENV: development
+  NODE_ENV: production
 
 jobs:
-  deploy-dev:
-    name: 開発環境へのデプロイ
+  deploy-prod:
+    name: 本番環境へのデプロイ
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: ビルド
-        run: NODE_ENV=production npm run build # ビルドするために環境変数を一時的に変更
+        run: npm run build
 
       - name: デプロイ
         uses: cloudflare/wrangler-action@v3
