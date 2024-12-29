@@ -39,3 +39,8 @@
 ```bash
 NODE_ENV=production npm run build
 ```
+
+## 開発コンテナでビルドしたアプリをホストする
+```bash
+npx serve@latest out
+```
