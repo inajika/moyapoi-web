@@ -5,6 +5,8 @@ import { useState } from 'react';
 import PostList from '@/components/moyamoyaList';
 import InputArea from '@/components/moyamoyaInput';
 
+import { DATE_LOCALE_OPTIONS } from '@/lib/settings';
+
 type Moyamoya = {
   id: string;
   content: string;
@@ -18,7 +20,7 @@ export default function Home() {
     const newMoyamoya: Moyamoya = {
       id: `${moyamoyaList.length + 1}`, // IDはもやもやの個数にする
       content: content,
-      date: new Date().toLocaleString(),
+      date: new Date().toLocaleString('ja-JP', DATE_LOCALE_OPTIONS),
     };
     setMoyamoyaList([newMoyamoya, ...moyamoyaList]); // 新しい投稿を最初に追加
   };
