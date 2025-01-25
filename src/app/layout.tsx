@@ -21,6 +21,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <script async src="https://platform.twitter.com/widgets.js" />
       </body>
     </html>
   );
