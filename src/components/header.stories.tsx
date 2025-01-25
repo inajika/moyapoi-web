@@ -18,6 +18,12 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {},
   render: function Render() {
-    return <Header />;
+    return (
+      <>
+        <Header />
+        {/* Xへのポストボタンのため */}
+        <script async src="https://platform.twitter.com/widgets.js" />
+      </>
+    );
   },
 };

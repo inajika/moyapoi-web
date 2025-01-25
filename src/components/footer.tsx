@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 /**
  * 共通フッター
  */
@@ -23,6 +26,11 @@ export default function Footer() {
             rel="noreferrer"
             className="underline hover:no-underline"
           >
+            <FontAwesomeIcon
+              icon={faGithub}
+              height={'1.2em'}
+              className="inline-block mr-0.5"
+            />
             GitHub
           </a>
         </li>

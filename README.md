@@ -33,6 +33,8 @@
 - Shadcn/ui
 - Biome
 - Storybook
+- Font Awesome
+  - Free
 
 ## 開発コンテナでアプリをビルドする
 一時的に`NODE_ENV`を`production`に変更する必要があります。
