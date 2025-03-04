@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 
-import PostList from '@/components/moyamoyaList';
-import InputArea from '@/components/moyamoyaInput';
+import MoyamoyaList from '@/components/moyamoyaList';
+import MoyamoyaInput from '@/components/moyamoyaInput';
 
 import { DATE_LOCALE_OPTIONS } from '@/lib/settings';
 
@@ -28,10 +28,10 @@ export default function Home() {
   return (
     <div className="p-1 flex flex-col h-[80vh]">
       <div className="flex-1 overflow-y-auto">
-        <PostList moyamoyaList={moyamoyaList} />
+        <MoyamoyaList moyamoyaList={moyamoyaList} />
       </div>
       <div>
-        <InputArea onAddMoyamoya={handleAddMoyamoya} />
+        <MoyamoyaInput onAddMoyamoya={handleAddMoyamoya} />
       </div>
     </div>
   );
